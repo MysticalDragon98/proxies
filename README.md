@@ -42,6 +42,7 @@ const bar = new proxy(1,2,3); // console.log("NEW", [1,2,3]);, returns 2 (Result
 ## Recursive proxies
 
 RecursiveProxies are similar to ElasticProxies, but their properties can be accessed with unlimited depth:
+
 Only apply and new functions are allowed, setter and getters are not allowed because all children properties of recursive proxies are also recursive proxies by itself.
 
 ```ts
